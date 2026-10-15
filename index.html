@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Eya Luxury Boutique</title>
+<meta name="description" content="Eya Luxury Boutique. Time is your signature.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600&family=Cormorant+Garamond:wght@500;600&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#06150F; --panel:#0C241B; --line:rgba(235,203,154,.22);
+  --ivory:#F4ECDD; --muted:rgba(244,236,221,.78); --champ:#EBCB9A;
+  --body:"Inter","Cairo",system-ui,sans-serif; --disp:"Cormorant Garamond","Cairo",serif;
+  --cf:url("images/cover.jpg");
+  --i1:url("images/watch-01.jpg");
+  --i2:url("images/watch-02.jpg");
+  --i3:url("images/watch-03.jpg");
+  --i4:url("images/watch-04.jpg");
+  --i5:url("images/watch-05.jpg");
+  --i6:url("images/watch-06.jpg");
+  --i7:url("images/watch-07.jpg");
+  --i8:url("images/watch-08.jpg");
+  --i9:url("images/watch-09.jpg");
+  --i10:url("images/watch-10.jpg");
+  --i11:url("images/watch-11.jpg");
+  --i12:url("images/watch-12.jpg");
+  --i13:url("images/watch-13.jpg");
+  --i14:url("images/watch-14.jpg");
+  --i15:url("images/watch-15.jpg");
+  --i16:url("images/watch-16.jpg");
+  --i17:url("images/watch-17.jpg");
+  --i18:url("images/watch-18.jpg");
+  --i19:url("images/watch-19.jpg");
+  --i20:url("images/watch-20.jpg");
+  --i21:url("images/watch-21.jpg");
+  --i22:url("images/watch-22.jpg");
+  --i23:url("images/watch-23.jpg");
+  --i24:url("images/watch-24.jpg");
+  --i25:url("images/watch-25.jpg");
+  --i26:url("images/watch-26.jpg");
+  --i27:url("images/watch-27.jpg");
+  --i28:url("images/watch-28.jpg");
+  --i29:url("images/watch-29.jpg");
+  --i30:url("images/watch-30.jpg");
+  --i31:url("images/watch-31.jpg");
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html.lenis,html.lenis body{height:auto}.lenis.lenis-smooth{scroll-behavior:auto!important}.lenis.lenis-stopped{overflow:hidden}
+body{font-family:var(--body);line-height:1.65;color:var(--ivory);background:var(--ink);-webkit-font-smoothing:antialiased}
+html[lang=ar] body{font-family:"Cairo",system-ui,sans-serif}
+html[lang=ar] *{letter-spacing:0!important}
+button{font:inherit;color:inherit;cursor:pointer}
+a{color:inherit}
+ul{list-style:none}
+:focus-visible{outline:2px solid var(--champ);outline-offset:3px}
+.pad{padding-inline:clamp(1.25rem,6vw,6rem)}
+h1,h2,h3,.mark{font-family:var(--disp)}
+html[lang=ar] h1,html[lang=ar] h2,html[lang=ar] h3{font-family:"Cairo",sans-serif;font-weight:600}
+
+/* Nav */
+.nav{position:absolute;z-index:2;top:calc(1.5rem + env(safe-area-inset-top,0px));inset-inline:clamp(1.25rem,6vw,6rem);
+  display:flex;justify-content:space-between;align-items:center;gap:1rem;padding-bottom:1.1rem;border-bottom:1px solid var(--line)}
+.mark{font-weight:600;font-size:1.3rem;letter-spacing:.2em;text-decoration:none;white-space:nowrap}
+.nav .r{display:flex;align-items:center;gap:1.6rem}
+.nav a.wa{font-weight:500;color:var(--champ);text-decoration:none;border-bottom:1px solid transparent}
+.nav a.wa:hover{border-color:var(--champ)}
+.lang{display:flex;gap:.3rem}
+.lang button{background:transparent;border:1px solid transparent;border-radius:2px;padding:.3rem .65rem;font-size:.88rem;color:var(--muted)}
+.lang button[aria-pressed=true]{border-color:var(--champ);color:var(--champ)}
+
+/* Hero */
+.hero{position:relative;min-height:100vh;min-height:100svh;display:grid;grid-template-columns:repeat(12,1fr);column-gap:2rem;align-items:center;
+  padding-top:calc(7rem + env(safe-area-inset-top,0px));padding-bottom:3rem;
+  background:radial-gradient(70% 80% at 80% 45%,#123F31 0%,transparent 70%),var(--ink)}
+html[dir=rtl] .hero{background:radial-gradient(70% 80% at 20% 45%,#123F31 0%,transparent 70%),var(--ink)}
+.copy{grid-column:1/span 6}
+h1{font-weight:500;font-size:clamp(3rem,5.6vw,5.8rem);line-height:1.02;letter-spacing:-.01em;margin-bottom:1rem}
+.sub{font:500 clamp(1.2rem,1.7vw,1.6rem)/1.35 var(--disp);color:var(--champ);margin-bottom:1.4rem;max-width:30rem}
+html[lang=ar] .sub{font-family:"Cairo",sans-serif}
+.lead{max-width:30rem;color:var(--muted);margin-bottom:2.2rem}
+.cta{display:inline-block;padding:1rem 1.8rem;background:var(--champ);color:#1b1209;font-weight:500;text-decoration:none;border-radius:2px;border:0;transition:background .2s}
+.cta:hover{background:#F6DCB4}
+.feat{grid-column:8/span 5;justify-self:end;width:100%;max-width:32rem;display:flex;flex-direction:column;gap:.8rem}
+.pic{aspect-ratio:4/5;background:var(--panel) center/cover no-repeat;border:1px solid var(--line)}
+.feat .pic{width:min(100%,calc((100svh - 13rem)*.8))}
+.feat p{font-size:.95rem;color:var(--muted)}
+
+/* Sections */
+section{padding-block:5rem;border-top:1px solid var(--line)}
+h2{font-weight:500;font-size:clamp(2rem,3.4vw,3rem);line-height:1.12}
+.kick{color:var(--champ);margin-top:.6rem;font-weight:500}
+.why ul{display:grid;grid-template-columns:repeat(auto-fit,minmax(13rem,1fr));gap:2rem 2.4rem;margin-top:2.6rem}
+.why li{border-top:1px solid var(--champ);padding-top:1rem}
+.why h3{font-weight:600;font-size:1.3rem;line-height:1.25;margin-bottom:.5rem}
+.why li p{color:var(--muted);font-size:.95rem}
+.story{display:grid;grid-template-columns:repeat(12,1fr);column-gap:2rem;row-gap:1.4rem}
+.story h2{grid-column:1/span 5}
+.story div{grid-column:7/span 6;display:grid;gap:1.2rem;color:var(--muted);max-width:38rem}
+
+.top{display:flex;justify-content:space-between;align-items:end;gap:1.5rem;flex-wrap:wrap;margin-bottom:2rem}
+.top p.s{color:var(--muted);max-width:34rem;margin-top:.6rem}
+.chips{display:flex;gap:.6rem;flex-wrap:wrap}
+.chip{padding:.55rem 1.1rem;background:transparent;border:1px solid var(--line);border-radius:99px;font-size:.92rem;transition:background .2s,border-color .2s}
+.chip:hover{background:rgba(244,236,221,.07)}
+.chip[aria-pressed=true]{background:var(--champ);border-color:var(--champ);color:#1b1209;font-weight:500}
+.count{color:var(--muted);font-size:.92rem;margin-bottom:1.2rem}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(15.5rem,1fr));gap:1.6rem}
+.card{display:flex;flex-direction:column;background:var(--panel);border:1px solid var(--line)}
+.card[hidden]{display:none}
+.card .pic{border:0;border-bottom:1px solid var(--line)}
+.card .b{padding:1rem 1.1rem 1.2rem;display:flex;flex-direction:column;gap:.5rem;flex:1}
+.card h3{font-weight:500;font-size:1.35rem;line-height:1.25}
+.card p{font-size:.92rem;color:var(--muted);flex:1}
+.card .pr{flex:none;font-size:1.1rem;font-weight:500;color:var(--champ)}
+.card a{align-self:flex-start;font-weight:500;color:var(--champ);text-decoration:none;border-bottom:1px solid transparent;padding:.2rem 0}
+.card a:hover{border-color:var(--champ)}
+.end{font:500 clamp(1.5rem,2.4vw,2.2rem)/1.3 var(--disp);text-align:center;padding-block:4rem;border-top:1px solid var(--line)}
+html[lang=ar] .end{font-family:"Cairo",sans-serif}
+footer{padding-block:2.5rem 3rem;border-top:1px solid var(--line);display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap;color:var(--muted);font-size:.92rem}
+
+@media (max-width:900px){
+  .hero{align-content:start;row-gap:2rem;padding-top:6rem}
+  .feat{grid-column:1/-1;grid-row:1;max-width:none}
+  .feat .pic{width:100%}
+  .copy,.story h2,.story div{grid-column:1/-1}
+  h1{font-size:clamp(2.8rem,12vw,4.2rem)}
+  .cta{display:block;text-align:center}
+  .nav .wa{display:none}
+  .mark{font-size:1rem}
+  .grid{grid-template-columns:repeat(auto-fill,minmax(10.5rem,1fr));gap:1rem}
+  .card h3{font-size:1.1rem}
+  section{padding-block:3.5rem}
+}
+
+#sp{position:fixed;top:0;left:0;right:0;height:3px;background:var(--champ);transform-origin:0 50%;transform:scaleX(0);z-index:50;pointer-events:none}
+/* 3D gallery: real photographs on a curved ring, turned by scroll */
+.gal{height:600vh;position:relative;padding:0!important;border-top:1px solid var(--line);background:#050f0b}
+.gs{position:sticky;top:0;height:100vh;height:100svh;overflow:hidden;background:radial-gradient(70% 60% at 50% 50%,#0f3a2d,#050f0b)}
+.gs canvas{position:absolute;inset:0;width:100%;height:100%;display:block}
+.gv{position:absolute;inset:0;pointer-events:none;background:radial-gradient(95% 85% at 50% 50%,transparent 50%,rgba(5,15,11,.8) 100%)}
+.gtop{position:absolute;top:calc(1.8rem + env(safe-area-inset-top,0px));inset-inline:0;text-align:center;padding-inline:1.5rem;pointer-events:none;text-shadow:0 2px 14px rgba(0,0,0,.7)}
+.gtop h2{font-size:clamp(1.5rem,3vw,2.4rem)}
+.gtop p{color:var(--muted);font-size:.92rem;margin-top:.3rem}
+.gcount{position:absolute;inset-inline-end:clamp(1.25rem,6vw,6rem);top:50%;transform:translateY(-50%);font-size:.85rem;color:var(--champ);text-shadow:0 1px 8px #000}
+.ginfo{position:absolute;bottom:calc(1.8rem + env(safe-area-inset-bottom,0px));inset-inline:0;display:flex;flex-direction:column;align-items:center;gap:.35rem;text-align:center;padding-inline:1.5rem;text-shadow:0 2px 14px rgba(0,0,0,.8)}
+.ginfo h3{font-weight:500;font-size:clamp(1.2rem,2.2vw,1.7rem);line-height:1.2}
+.ginfo p{color:var(--champ);font-weight:500}
+.ginfo a{margin-top:.4rem;padding:.8rem 1.5rem;background:var(--champ);color:#1b1209;font-weight:500;text-decoration:none;border-radius:2px;text-shadow:none}
+.ginfo a:hover{background:#F6DCB4}
+.gal.nogl .gs::after{content:"3D needs WebGL";position:absolute;inset:0;display:grid;place-items:center}
+
+/* Cinematic scroll film: first photo zooms into bracelet and crystal, turns through other angles, then reveals the brand */
+.cine{height:700vh;position:relative;padding:0!important;border-top:1px solid var(--line);background:#07110d}
+.cpin{position:sticky;top:0;height:100vh;height:100svh;display:grid;place-items:center}
+.cstage{position:relative;height:100%;width:min(100vw,calc(100svh*9/16));overflow:hidden;background:#1b1410;box-shadow:0 0 90px rgba(0,0,0,.6);perspective:1000px}
+.cl{position:absolute;inset:0;overflow:hidden}
+.cbg{position:absolute;inset:-12%;background-size:cover;background-position:center;filter:blur(30px) brightness(.85) saturate(1.1)}
+.cp{position:absolute;inset:0;background-repeat:no-repeat;background-position:center;will-change:transform}
+#cn-lb .cp{background-size:cover}
+#cn-la .cp{background-size:contain;background-position:50% 45%}
+#cn-lc .cp{background-size:contain;background-position:50% 62%}
+#cn-la,#cn-lc{opacity:0}
+.cdof{position:absolute;inset:0;pointer-events:none;opacity:0;-webkit-backdrop-filter:blur(7px);backdrop-filter:blur(7px);
+  -webkit-mask-image:radial-gradient(ellipse 55% 42% at 50% 48%,transparent 55%,#000 100%);mask-image:radial-gradient(ellipse 55% 42% at 50% 48%,transparent 55%,#000 100%)}
+.cvig{position:absolute;inset:0;pointer-events:none;background:radial-gradient(120% 90% at 50% 45%,transparent 55%,rgba(20,14,10,.4) 100%)}
+.chud{position:absolute;inset:0;pointer-events:none;padding:calc(1.4rem + env(safe-area-inset-top,0px)) 1.4rem calc(1.4rem + env(safe-area-inset-bottom,0px));display:flex;flex-direction:column;justify-content:space-between;text-shadow:0 1px 8px rgba(0,0,0,.6)}
+.chud .r{display:flex;justify-content:space-between;font-size:.8rem}
+.cmini{font:600 .95rem var(--disp);letter-spacing:.2em}
+.cbar{position:absolute;inset-inline-end:0;top:50%;width:2px;height:28%;transform:translateY(-50%);background:rgba(244,236,221,.25)}
+.cbar i{display:block;width:100%;height:0;background:var(--champ)}
+.ccap{font-size:.85rem;text-align:center}
+.cfin{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;padding:calc(3.2rem + env(safe-area-inset-top,0px)) 1.6rem 0;text-align:center;opacity:0;pointer-events:none;text-shadow:0 1px 10px rgba(0,0,0,.5);background:linear-gradient(rgba(20,14,10,.7),rgba(20,14,10,0) 45%)}
+.cfin .lg{font:600 1.7rem/1.1 var(--disp);letter-spacing:.24em;margin-bottom:1.1rem;min-height:4.4rem;display:flex;flex-direction:column;justify-content:center}
+.cfin .lg small{font:500 .62rem var(--body);letter-spacing:.42em;margin-top:.5rem;color:var(--champ)}
+.cfin h2{font-size:clamp(1.7rem,6.4vw,2.4rem);line-height:1.12}
+.cbtn{position:absolute;left:50%;bottom:calc(2rem + env(safe-area-inset-bottom,0px));transform:translateX(-50%);white-space:nowrap;padding:1rem 1.8rem;background:var(--ivory);color:#3A332C;text-decoration:none;font-weight:500;font-size:.92rem;border-radius:2px;opacity:0}
+.cbtn:hover{background:#fff}
+</style>
+</head>
+<body>
+<div id="sp" aria-hidden="true"></div>
+<header class="hero pad">
+  <nav class="nav" aria-label="Primary">
+    <a class="mark" href="#">EYA LUXURY BOUTIQUE</a>
+    <div class="r">
+      <a class="wa" href="#" data-wa="g">WhatsApp</a>
+      <div class="lang" role="group" aria-label="Language">
+        <button data-l="en">EN</button><button data-l="fr">FR</button><button data-l="ar">عربي</button>
+      </div>
+    </div>
+  </nav>
+  <div class="copy">
+    <h1 data-t="tag"></h1>
+    <p class="sub" data-t="sub"></p>
+    <p class="lead" data-t="welcome"></p>
+    <a class="cta" href="#collection" data-t="cta"></a>
+  </div>
+  <figure class="feat">
+    <div class="pic" id="hpic" role="img" style="background-image:var(--i20)"></div>
+    <p id="hcap"></p>
+  </figure>
+</header>
+
+<main>
+  <section class="cine" id="cine" aria-label="Cinematic film">
+    <div class="cpin"><div class="cstage" id="cn-st">
+      <div class="cl" id="cn-lb"><div class="cbg" style="background-image:var(--cf)"></div><div class="cp" id="cn-pb" role="img" aria-label="Rose gold watch with a diamond-paved dial" style="background-image:var(--cf)"></div></div>
+      <div class="cl" id="cn-la"><div class="cbg" style="background-image:var(--i20)"></div><div class="cp" id="cn-pa" role="img" aria-label="Rainbow bezel watch" style="background-image:var(--i20)"></div></div>
+      <div class="cl" id="cn-lc"><div class="cbg" style="background-image:var(--i15)"></div><div class="cp" id="cn-pc" role="img" aria-label="Rainbow bezel chronograph" style="background-image:var(--i15)"></div></div>
+      <div class="cdof" id="cn-dof"></div><div class="cvig"></div>
+      <div class="chud"><div class="r"><span class="cmini">EYA</span><span id="cn-count">01 / 05</span></div>
+        <div class="cbar" aria-hidden="true"><i id="cn-prog"></i></div><div class="ccap" id="cn-cap"></div></div>
+      <div class="cfin" id="cn-final"><div class="lg">EYA<small>LUXURY BOUTIQUE</small></div><h2 id="cn-h"></h2></div>
+      <a class="cbtn" id="cn-btn" href="#" target="_blank" rel="noopener"></a>
+    </div></div>
+  </section>
+
+  <section class="gal" id="gal" aria-label="3D gallery">
+    <div class="gs">
+      <canvas id="glc" aria-hidden="true"></canvas><div class="gv"></div>
+      <div class="gtop"><h2 data-t="gal_h"></h2><p data-t="gal_p"></p></div>
+      <div class="gcount" id="gcount"></div>
+      <div class="ginfo"><h3 id="gname"></h3><p id="gprice"></p><a id="genq" href="#" target="_blank" rel="noopener"></a></div>
+    </div>
+  </section>
+  <section class="why pad" aria-labelledby="wh">
+    <h2 id="wh" data-t="why_h"></h2>
+    <p class="kick" data-t="why_k"></p>
+    <ul id="whys"></ul>
+  </section>
+
+  <section class="story pad" aria-labelledby="sh">
+    <h2 id="sh" data-t="story_h"></h2>
+    <div><p data-t="p1"></p><p data-t="p2"></p><p data-t="p3"></p></div>
+  </section>
+
+  <section class="pad" id="collection" aria-labelledby="ct">
+    <div class="top">
+      <div><h2 id="ct" data-t="coll_h"></h2><p class="s" data-t="coll_p"></p></div>
+      <div class="chips" role="group" id="chips"></div>
+    </div>
+    <p class="count" id="count" aria-live="polite"></p>
+    <ul class="grid" id="grid"></ul>
+  </section>
+
+  <p class="end pad" data-t="end"></p>
+</main>
+
+<footer class="pad">
+  <span>EYA LUXURY BOUTIQUE</span>
+  <a href="#" data-wa="g">WhatsApp +216 52 616 996</a>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+<script>
+  /* WhatsApp number, international format (Tunisia +216) */
+  const WA = '21652616996';
+
+  /* ---------- Interface text ---------- */
+  const S = {
+    en: {
+      tag: 'Time is your signature.', sub: 'More than a watch. A statement of who you are.',
+      welcome: 'Welcome to Eya Luxury Boutique, where timeless elegance meets exceptional style. We believe a watch is more than an accessory — it is a reflection of your personality, your ambitions, and the moments that shape your life.',
+      cta: 'Explore the collection', why_h: 'Why wear a luxury watch?', why_k: 'Confidence. Elegance. Identity.',
+      whys: [['Express your personality.', 'Choose a timepiece that reflects your individual taste and style.'],
+        ['Make a lasting impression.', 'Thoughtful details can elevate your look and help you feel prepared for important occasions.'],
+        ['Celebrate your achievements.', 'A luxury watch can symbolize dedication, ambition, and milestones worth remembering.'],
+        ['Invest in timeless style.', 'Discover designs that remain elegant beyond changing trends.'],
+        ['Make every moment count.', 'A watch is a reminder that your time is valuable and your ambitions deserve attention.']],
+      story_h: 'Your time. Your story. Your choice.',
+      p1: 'A great watch does not simply tell the time. It tells a story. It can express confidence, celebrate achievement, and add a distinctive touch to every occasion. Whether you are building your career, attending an important event, or enjoying life\u2019s everyday moments, the right timepiece can become part of your personal signature.',
+      p2: 'You do not need a luxury watch to prove your worth. True elegance begins with who you are. But when you choose a timepiece that speaks to your character, it can become a beautiful expression of the person you are becoming.',
+      p3: 'At Eya Luxury Boutique, we invite you to discover the piece that matches your vision, complements your style, and makes every moment feel a little more special.',
+      coll_h: 'Find the watch that speaks to you', coll_p: 'Explore our collection, discover your favorite design, and choose the timepiece that feels right for you.',
+      end: 'Your journey into timeless elegance starts here.',
+      f: ['All', 'Gold', 'Steel and two-tone', 'Diamond-set', 'Colour'], fl: 'Filter watches',
+      count: n => n + ' watches, sorted by price', enq: 'Enquire on WhatsApp',
+      wag: 'Hello Eya Luxury Boutique, I\u2019d like to enquire about a watch.', waw: 'Hello Eya Luxury Boutique, I am interested in this watch: ',
+      price: p => p.toLocaleString('en-US') + ' TND', sep: ', ', title: 'Eya Luxury Boutique \u2014 Time is your signature'
+    },
+    fr: {
+      tag: 'Le temps est votre signature.', sub: 'Plus qu\u2019une montre. L\u2019affirmation de qui vous \u00eates.',
+      welcome: 'Bienvenue chez Eya Luxury Boutique, l\u00e0 o\u00f9 l\u2019\u00e9l\u00e9gance intemporelle rencontre un style d\u2019exception. Nous croyons qu\u2019une montre est plus qu\u2019un accessoire : elle refl\u00e8te votre personnalit\u00e9, vos ambitions et les moments qui fa\u00e7onnent votre vie.',
+      cta: 'D\u00e9couvrir la collection', why_h: 'Pourquoi porter une montre de luxe ?', why_k: 'Confiance. \u00c9l\u00e9gance. Identit\u00e9.',
+      whys: [['Exprimez votre personnalit\u00e9.', 'Choisissez une montre qui refl\u00e8te votre go\u00fbt et votre style.'],
+        ['Laissez une impression durable.', 'Des d\u00e9tails soign\u00e9s subliment votre allure et vous aident \u00e0 vous sentir pr\u00eat pour les grandes occasions.'],
+        ['C\u00e9l\u00e9brez vos r\u00e9ussites.', 'Une montre de luxe peut symboliser le travail, l\u2019ambition et les \u00e9tapes qui m\u00e9ritent d\u2019\u00eatre retenues.'],
+        ['Investissez dans un style intemporel.', 'D\u00e9couvrez des mod\u00e8les qui restent \u00e9l\u00e9gants au-del\u00e0 des modes.'],
+        ['Donnez du prix \u00e0 chaque instant.', 'Une montre vous rappelle que votre temps est pr\u00e9cieux et que vos ambitions m\u00e9ritent votre attention.']],
+      story_h: 'Votre temps. Votre histoire. Votre choix.',
+      p1: 'Une belle montre ne se contente pas de donner l\u2019heure. Elle raconte une histoire. Elle peut exprimer la confiance, c\u00e9l\u00e9brer une r\u00e9ussite et apporter une touche distinctive \u00e0 chaque occasion. Que vous construisiez votre carri\u00e8re, assistiez \u00e0 un \u00e9v\u00e9nement important ou profitiez des moments du quotidien, la bonne montre peut devenir votre signature personnelle.',
+      p2: 'Vous n\u2019avez pas besoin d\u2019une montre de luxe pour prouver votre valeur. La vraie \u00e9l\u00e9gance commence par ce que vous \u00eates. Mais lorsque vous choisissez une montre qui parle de votre caract\u00e8re, elle devient une belle expression de la personne que vous \u00eates en train de devenir.',
+      p3: 'Chez Eya Luxury Boutique, nous vous invitons \u00e0 d\u00e9couvrir la pi\u00e8ce qui correspond \u00e0 votre vision, compl\u00e8te votre style et rend chaque instant un peu plus sp\u00e9cial.',
+      coll_h: 'Trouvez la montre qui vous parle', coll_p: 'Parcourez notre collection, rep\u00e9rez le mod\u00e8le que vous pr\u00e9f\u00e9rez et choisissez la montre qui vous correspond.',
+      end: 'Votre voyage vers l\u2019\u00e9l\u00e9gance intemporelle commence ici.',
+      f: ['Toutes', 'Or', 'Acier et bicolore', 'Serties de diamants', 'Couleur'], fl: 'Filtrer les montres',
+      count: n => n + ' montres, tri\u00e9es par prix', enq: 'Demander sur WhatsApp',
+      wag: 'Bonjour Eya Luxury Boutique, je souhaite me renseigner sur une montre.', waw: 'Bonjour Eya Luxury Boutique, cette montre m\u2019int\u00e9resse : ',
+      price: p => p.toLocaleString('fr-FR') + ' TND', sep: ', ', title: 'Eya Luxury Boutique \u2014 Le temps est votre signature'
+    },
+    ar: {
+      tag: 'الوقت هو توقيعك.', sub: 'أكثر من ساعة. تعبير عن هويتك.',
+      welcome: 'مرحبًا بكم في إيا لاكجري بوتيك، حيث تلتقي الأناقة الخالدة بالأسلوب الاستثنائي. نؤمن بأن الساعة أكثر من مجرد إكسسوار؛ إنها انعكاس لشخصيتك وطموحاتك واللحظات التي تصنع حياتك.',
+      cta: 'اكتشف المجموعة', why_h: 'لماذا ترتدي ساعة فاخرة؟', why_k: 'ثقة. أناقة. هوية.',
+      whys: [['عبّر عن شخصيتك.', 'اختر ساعة تعكس ذوقك وأسلوبك الخاص.'],
+        ['اترك انطباعًا لا يُنسى.', 'التفاصيل المدروسة ترفع من مظهرك وتجعلك مستعدًا للمناسبات المهمة.'],
+        ['احتفل بإنجازاتك.', 'يمكن للساعة الفاخرة أن ترمز إلى الاجتهاد والطموح ومحطات تستحق التذكّر.'],
+        ['استثمر في أناقة خالدة.', 'اكتشف تصاميم تبقى أنيقة مهما تغيّرت الموضة.'],
+        ['اجعل كل لحظة ذات قيمة.', 'الساعة تذكير بأن وقتك ثمين وأن طموحاتك تستحق الاهتمام.']],
+      story_h: 'وقتك. قصتك. اختيارك.',
+      p1: 'الساعة الجيدة لا تكتفي بإخبارك بالوقت، بل تروي قصة. يمكنها أن تعبّر عن الثقة، وتحتفي بإنجاز، وتضيف لمسة مميزة لكل مناسبة. سواء كنت تبني مسيرتك المهنية، أو تحضر حدثًا مهمًا، أو تستمتع بلحظات يومك العادية، فإن الساعة المناسبة قد تصبح جزءًا من توقيعك الشخصي.',
+      p2: 'لست بحاجة إلى ساعة فاخرة لتثبت قيمتك. الأناقة الحقيقية تبدأ منك أنت. لكن عندما تختار ساعة تعبّر عن شخصيتك، قد تصبح تعبيرًا جميلًا عن الشخص الذي تسعى لأن تكونه.',
+      p3: 'في إيا لاكجري بوتيك ندعوك لاكتشاف القطعة التي تناسب رؤيتك، وتكمل أسلوبك، وتجعل كل لحظة أكثر تميّزًا.',
+      coll_h: 'اعثر على الساعة التي تحدّثك', coll_p: 'تصفّح مجموعتنا، واكتشف تصميمك المفضّل، واختر الساعة التي تشعر أنها لك.',
+      end: 'رحلتك نحو الأناقة الخالدة تبدأ من هنا.',
+      f: ['الكل', 'ذهب', 'ستانلس وذهب', 'مرصّعة بالألماس', 'ألوان'], fl: 'تصفية الساعات',
+      count: n => n + ' ساعة، مرتبة حسب السعر', enq: 'استفسر عبر واتساب',
+      wag: 'مرحبًا إيا لاكجري بوتيك، أودّ الاستفسار عن ساعة.', waw: 'مرحبًا إيا لاكجري بوتيك، أنا مهتم بهذه الساعة: ',
+      price: p => p.toLocaleString('en-US') + ' د.ت', sep: '، ', title: 'إيا لاكجري بوتيك — الوقت هو توقيعك'
+    }
+  };
+
+  Object.assign(S.en, { gal_h: 'Step inside the collection', gal_p: 'Keep scrolling to turn the room.' });
+  Object.assign(S.fr, { gal_h: 'Entrez dans la collection', gal_p: 'Continuez \u00e0 d\u00e9filer pour faire tourner la pi\u00e8ce.' });
+  Object.assign(S.ar, { gal_h: 'ادخل إلى المجموعة', gal_p: 'تابع التمرير لتدوير المعرض.' });
+
+  Object.assign(S.en, { cine: ['The hero shot', 'Craftsmanship', 'Crystal', 'Every angle', 'Your signature'] });
+  Object.assign(S.fr, { cine: ['Le plan d\u2019ensemble', 'Le savoir-faire', 'Le cristal', 'Tous les angles', 'Votre signature'] });
+  Object.assign(S.ar, { cine: ['اللقطة الرئيسية', 'الحِرفية', 'الكريستال', 'من كل زاوية', 'توقيعك'] });
+
+  /* ---------- Watch vocabulary: [English, French, Arabic] ---------- */
+  const P = {
+    d_choc: ['Chocolate dial', 'Cadran chocolat', 'ميناء بلون الشوكولاتة'], d_blue: ['Blue dial', 'Cadran bleu', 'ميناء أزرق'],
+    d_slate: ['Slate grey dial', 'Cadran gris ardoise', 'ميناء رمادي داكن'], d_ice: ['Ice-blue dial', 'Cadran bleu glacier', 'ميناء أزرق جليدي'],
+    d_olive: ['Olive dial', 'Cadran vert olive', 'ميناء أخضر زيتوني'], d_mop: ['Mother-of-pearl dial', 'Cadran nacre', 'ميناء من الصدف'],
+    d_pmop: ['Purple mother-of-pearl dial', 'Cadran nacre violet', 'ميناء صدفي بنفسجي'], d_champ: ['Champagne dial', 'Cadran champagne', 'ميناء بلون الشامبانيا'],
+    d_red: ['Red dial', 'Cadran rouge', 'ميناء أحمر'], d_black: ['Black dial', 'Cadran noir', 'ميناء أسود'],
+    d_blush: ['Blush dial', 'Cadran rose poudré', 'ميناء وردي فاتح'], d_purple: ['Purple dial', 'Cadran violet', 'ميناء بنفسجي'],
+    d_magenta: ['Magenta dial', 'Cadran magenta', 'ميناء أرجواني'], d_pink: ['Pink dial', 'Cadran rose', 'ميناء وردي'],
+    d_pave: ['Diamond-paved dial', 'Cadran pavé de diamants', 'ميناء مرصّع بالألماس'], d_skel: ['Skeleton dial', 'Cadran squelette', 'ميناء هيكلي مفتوح'],
+    n_pair: ['Ice-blue and olive dials', 'Cadrans bleu glacier et vert olive', 'ميناءان: أزرق جليدي وأخضر زيتوني'],
+    m_rg: ['Rose gold', 'Or rose', 'ذهب وردي'], m_yg: ['Yellow gold', 'Or jaune', 'ذهب أصفر'], m_st: ['Steel', 'Acier', 'ستانلس ستيل'],
+    m_tt: ['Steel and yellow gold', 'Acier et or jaune', 'ستانلس وذهب أصفر'], m_tr: ['Steel and rose gold', 'Acier et or rose', 'ستانلس وذهب وردي'],
+    m_sl: ['Silver-tone case and bracelet', 'Boîtier et bracelet argentés', 'علبة وسوار بلون فضي'], m_rgt: ['Rose gold-tone', 'Ton or rose', 'بلون الذهب الوردي'],
+    f_dbez: ['Diamond-set bezel', 'Lunette sertie de diamants', 'إطار مرصّع بالألماس'], f_flbez: ['Fluted bezel', 'Lunette cannelée', 'إطار مخدّد'],
+    f_dmark: ['Diamond hour markers', 'Index en diamants', 'علامات ساعات من الألماس'], f_bmark: ['Baguette hour markers', 'Index baguette', 'علامات ساعات بقطع الباغيت'],
+    f_rom: ['Roman numerals', 'Chiffres romains', 'أرقام رومانية'], f_date: ['Date window', 'Fenêtre de date', 'نافذة التاريخ'],
+    f_dd: ['Day and date', 'Jour et date', 'اليوم والتاريخ'], f_chrono: ['Chronograph with three sub-dials', 'Chronographe à trois compteurs', 'كرونوغراف بثلاثة عدادات'],
+    f_dlugs: ['Diamond-set lugs', 'Cornes serties de diamants', 'وصلات مرصّعة بالألماس'], f_dbrac: ['Diamond-set bracelet', 'Bracelet serti de diamants', 'سوار مرصّع بالألماس'],
+    f_dcase: ['Diamond-set case and bracelet', 'Boîtier et bracelet sertis de diamants', 'علبة وسوار مرصّعان بالألماس'],
+    f_rbez: ['Rainbow gemstone bezel', 'Lunette de pierres arc-en-ciel', 'إطار بأحجار بألوان قوس قزح'], f_bagbez: ['Baguette diamond bezel', 'Lunette diamants baguette', 'إطار بألماس الباغيت'],
+    f_sapbez: ['Sapphire and diamond bezel', 'Lunette saphirs et diamants', 'إطار من الياقوت الأزرق والألماس'], f_tour: ['Tourbillon', 'Tourbillon', 'توربيون'],
+    f_leather: ['Black leather strap', 'Bracelet cuir noir', 'حزام جلد أسود'], f_rubber: ['Black rubber strap', 'Bracelet caoutchouc noir', 'حزام مطاط أسود'],
+    f_engr: ['Engraved bezel with diamond studs', 'Lunette gravée à plots de diamants', 'إطار منقوش بنقاط ألماس'],
+    f_bruns: ['Brown tachymeter bezel', 'Lunette tachymètre brune', 'إطار تاكيميتر بني'], f_crys: ['Crystal-set bezel', 'Lunette sertie de cristaux', 'إطار مرصّع بالكريستال'],
+    f_rnum: ['Multicoloured Roman numerals', 'Chiffres romains multicolores', 'أرقام رومانية بألوان متعددة'], f_rmark: ['Multicoloured baguette markers', 'Index baguette multicolores', 'علامات باغيت بألوان متعددة'],
+    f_dnum: ['Diamond-set Roman numerals', 'Chiffres romains sertis de diamants', 'أرقام رومانية مرصّعة بالألماس'], f_gnum: ['Gold Roman numerals', 'Chiffres romains dorés', 'أرقام رومانية ذهبية'],
+    f_arom: ['Arabic and Roman numerals', 'Chiffres arabes et romains', 'أرقام عربية ورومانية'], f_sapbrac: ['Sapphire and diamond bracelet', 'Bracelet saphirs et diamants', 'سوار من الياقوت والألماس'],
+    f_bagbrac: ['Baguette diamond bracelet', 'Bracelet diamants baguette', 'سوار بألماس الباغيت']
+  };
+
+  /* image number, price (TND), tags (g gold, s steel/two-tone, d diamond-set, c colour), name parts, detail parts. Sorted by price. */
+  const W = [
+    [1, 19575, 'g', 'd_blush m_rgt', 'f_chrono f_crys'], [2, 20445, 'gs', 'd_choc m_tr', 'f_flbez f_date'],
+    [3, 24360, 'sdc', 'd_blue m_st', 'f_dmark f_flbez f_date'], [4, 25955, 'gsd', 'd_slate m_tr', 'f_rom f_dbez'],
+    [5, 27405, 'sc', 'd_ice f_bruns', 'm_sl f_chrono'], [6, 29000, 'gsdc', 'd_olive m_tt', 'f_dmark f_dbez'],
+    [25, 30450, 'gsdc', 'd_pmop m_tt', 'f_dmark f_dbez f_dlugs'], [7, 31755, 'sd', 'd_mop f_engr', 'f_chrono f_leather f_date'],
+    [30, 32625, 'sdc', 'd_pink m_st', 'f_rom f_dbez'], [8, 34220, 'gd', 'd_choc m_rg', 'f_dmark f_dbez'],
+    [31, 35525, 'gdc', 'd_pink m_rg', 'f_dmark f_flbez f_dd'], [9, 36250, 'gc', 'd_olive m_rg', 'f_rom f_flbez f_dd'],
+    [10, 38425, 'gd', 'd_champ m_yg', 'f_dmark f_flbez f_dlugs f_dbrac'], [27, 39875, 'gdc', 'd_blue m_yg', 'f_dmark f_dbez f_date'],
+    [11, 40600, 'gdc', 'd_pave m_rg', 'f_bmark f_dbez f_dbrac'], [12, 43500, 'sdc', 'n_pair', 'm_sl f_arom f_bagbez'],
+    [13, 47850, 'gsdc', 'd_red m_tt', 'f_dnum f_dbez f_dbrac'], [14, 52925, 'sdc', 'd_red m_st', 'f_dnum f_dcase'],
+    [26, 55100, 'gdc', 'd_purple m_yg', 'f_dmark f_dbez f_dd'], [15, 58000, 'gdc', 'f_rbez d_black', 'm_rg f_chrono f_dlugs'],
+    [29, 62350, 'sdc', 'd_magenta m_st', 'f_dnum f_dcase'], [16, 65250, 'sdc', 'd_pave f_rnum', 'm_st f_dcase'],
+    [17, 72500, 'sdc', 'd_pave f_rmark', 'm_st f_dcase'], [18, 84100, 'gd', 'd_pave m_rg', 'f_dcase f_date'],
+    [19, 98600, 'gd', 'd_pave f_rubber', 'm_rg f_chrono f_dcase'], [28, 101500, 'gd', 'd_pave m_yg', 'f_gnum f_dcase f_dd'],
+    [20, 116000, 'gdc', 'f_rbez d_pave', 'm_rg f_chrono f_dbrac'], [21, 127600, 'gdc', 'd_pave f_rbez', 'm_rg f_chrono f_dbrac'],
+    [22, 145000, 'sd', 'd_pave f_bagbez', 'm_st f_bmark f_dbrac f_date'], [23, 175450, 'sdc', 'd_skel f_sapbez', 'f_sapbrac'],
+    [24, 233450, 'gd', 'd_skel f_tour', 'm_rg f_bagbez f_bagbrac']
+  ];
+  const FK = ['all', 'g', 's', 'd', 'c'];
+
+  /* ---------- Rendering ---------- */
+  let L = 'en', filt = 'all';
+  const $ = id => document.getElementById(id), LI = { en: 0, fr: 1, ar: 2 };
+  const join = (keys, i) => keys.split(' ').map((k, n) => { const s = P[k][i]; return n && i < 2 ? s[0].toLowerCase() + s.slice(1) : s; }).join(S[L].sep);
+  const link = t => `https://wa.me/${WA}?text=${encodeURIComponent(t)}`;
+
+  function render() {
+    const s = S[L], i = LI[L], h = document.documentElement;
+    h.lang = L; h.dir = L === 'ar' ? 'rtl' : 'ltr'; document.title = s.title;
+    document.querySelectorAll('[data-t]').forEach(e => e.textContent = s[e.dataset.t]);
+    document.querySelectorAll('[data-wa="g"]').forEach(a => { a.href = link(s.wag); a.target = '_blank'; a.rel = 'noopener'; });
+    document.querySelectorAll('.lang button').forEach(b => b.setAttribute('aria-pressed', b.dataset.l === L));
+    $('whys').innerHTML = s.whys.map(w => `<li><h3>${w[0]}</h3><p>${w[1]}</p></li>`).join('');
+    const hero = W.find(w => w[0] === 20), hn = join(hero[3], i);
+    $('hcap').textContent = hn + s.sep + join(hero[4], i).toLowerCase().replace(/^/, '') ;
+    $('hpic').setAttribute('aria-label', hn);
+    $('chips').setAttribute('aria-label', s.fl);
+    $('chips').innerHTML = s.f.map((t, n) => `<button class="chip" data-f="${FK[n]}" aria-pressed="${FK[n] === filt}">${t}</button>`).join('');
+    $('grid').innerHTML = W.map(w => {
+      const name = join(w[3], i), pr = s.price(w[1]);
+      return `<li class="card" data-g="${w[2]}" ${filt === 'all' || w[2].includes(filt) ? '' : 'hidden'}>
+        <div class="pic" role="img" aria-label="${name}" style="background-image:var(--i${w[0]})"></div>
+        <div class="b"><h3>${name}</h3><p class="pr">${pr}</p><p>${join(w[4], i)}</p>
+        <a href="${link(s.waw + name + ' (' + pr + ')')}" target="_blank" rel="noopener">${s.enq}</a></div></li>`;
+    }).join('');
+    $('count').textContent = s.count($('grid').querySelectorAll('.card:not([hidden])').length);
+    typeof afterRender === 'function' && afterRender();
+    try { localStorage.setItem('eya-lang', L); } catch (e) {}
+  }
+  document.querySelector('.lang').addEventListener('click', e => { const b = e.target.closest('button'); if (b) { L = b.dataset.l; render(); } });
+  $('chips').addEventListener('click', e => { const b = e.target.closest('.chip'); if (b) { filt = b.dataset.f; render(); } });
+
+  try { const v = localStorage.getItem('eya-lang'); if (S[v]) L = v; else { const n = (navigator.language || '').slice(0, 2); if (S[n]) L = n; } } catch (e) {}
+  render();
+
+  /* ================= Motion: Lenis smooth scroll, GSAP ScrollTrigger, Three.js gallery ================= */
+  const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+  gsap.registerPlugin(ScrollTrigger);
+  if (!reduce) {
+    const lenis = new Lenis({ lerp: .085 }); lenis.on('scroll', ScrollTrigger.update);
+    gsap.ticker.add(t => lenis.raf(t * 1000)); gsap.ticker.lagSmoothing(0);
+    document.addEventListener('click', e => { const a = e.target.closest('a[href^="#"]'), h = a && a.getAttribute('href');
+      if (h && h.length > 1) { const el = document.querySelector(h); if (el) { e.preventDefault(); lenis.scrollTo(el); } } });
+  }
+  gsap.to('#sp', { scaleX: 1, ease: 'none', scrollTrigger: { start: 0, end: 'max', scrub: .3 } });
+
+  if (!reduce) {
+    gsap.from('.nav, .copy > *', { y: 36, opacity: 0, duration: 1.1, ease: 'power3.out', stagger: .12, delay: .15 });
+    gsap.from('#hpic', { clipPath: 'inset(100% 0 0 0)', duration: 1.5, ease: 'power3.inOut', delay: .2 });
+    gsap.to('#hpic', { yPercent: -7, ease: 'none', scrollTrigger: { trigger: '.hero', start: 'top top', end: 'bottom top', scrub: true } });
+    gsap.utils.toArray('.why h2, .why .kick, .why li, .story h2, .story p, .coll h2, #ct, .end').forEach(el =>
+      gsap.from(el, { y: 40, opacity: 0, duration: 1, ease: 'power3.out', scrollTrigger: { trigger: el, start: 'top 90%', once: true } }));
+  }
+
+  /* Cards rise in as they enter the screen. Runs again after every language or filter change. */
+  let cardTrig = [];
+  function afterRender() {
+    if (!window.__ready) return;
+    cardTrig.forEach(x => x.kill());
+    if (!reduce) { gsap.set('.card:not([hidden])', { opacity: 0, y: 46 });
+      cardTrig = ScrollTrigger.batch('.card:not([hidden])', { start: 'top 94%', once: true,
+        onEnter: b => gsap.to(b, { opacity: 1, y: 0, duration: .9, ease: 'power3.out', stagger: .07, overwrite: true }) }); }
+    ScrollTrigger.refresh(); galInfo(); cineText();
+  }
+
+  /* ---- 3D gallery: twelve real photographs on a curved ring around the camera ---- */
+  const GAL = [20, 5, 13, 31, 23, 15, 9, 24, 12, 10, 16, 21].map(n => W.find(w => w[0] === n));
+  const gcv = $('glc'); let gIdx = 0, gActive = false, gP = 0;
+  function galInfo() {
+    const s = S[L], w = GAL[gIdx], name = join(w[3], LI[L]), pr = s.price(w[1]);
+    $('gname').textContent = name; $('gprice').textContent = pr; $('gcount').textContent = `${String(gIdx + 1).padStart(2, '0')} / ${GAL.length}`;
+    const a = $('genq'); a.textContent = s.enq; a.href = link(s.waw + name + ' (' + pr + ')');
+  }
+  (function galInit() {
+    let r; try { r = new THREE.WebGLRenderer({ canvas: gcv, antialias: true, alpha: true }); } catch (e) { $('gal').classList.add('nogl'); return; }
+    r.outputEncoding = THREE.sRGBEncoding;
+    const scene = new THREE.Scene(), cam = new THREE.PerspectiveCamera(42, 1, .1, 50), ring = new THREE.Group(); scene.add(ring);
+    const N = GAL.length, step = Math.PI * 2 / N, R = 6, tw = step * .8, h = R * tw * 1.25, mats = [], meshes = [];
+    GAL.forEach((w, i) => {
+      const mat = new THREE.MeshBasicMaterial({ color: 0x333333, side: THREE.BackSide }), m = new THREE.Mesh(new THREE.CylinderGeometry(R, R, h, 24, 1, true, i * step - tw / 2, tw), mat);
+      ring.add(m); mats.push(mat); meshes.push(m);
+      const raw = getComputedStyle(document.documentElement).getPropertyValue('--i' + w[0]).trim();
+      new THREE.TextureLoader().load(raw.slice(5, -2), tex => { tex.encoding = THREE.sRGBEncoding; tex.anisotropy = 8; tex.wrapS = THREE.RepeatWrapping; tex.repeat.x = -1; tex.offset.x = 1; mat.map = tex; mat.needsUpdate = true; });
+    });
+    const sz = () => { const el = gcv.parentElement; r.setPixelRatio(Math.min(devicePixelRatio || 1, 1.75)); r.setSize(el.clientWidth, el.clientHeight, false); cam.aspect = el.clientWidth / el.clientHeight; cam.updateProjectionMatrix(); };
+    sz(); new ResizeObserver(sz).observe(gcv.parentElement);
+    ScrollTrigger.create({ trigger: '#gal', start: 'top bottom', end: 'bottom top', onToggle: s => gActive = s.isActive });
+    ScrollTrigger.create({ trigger: '#gal', start: 'top top', end: 'bottom bottom', onUpdate: s => gP = s.progress });
+    let cur = 0, px = 0, py = 0;
+    addEventListener('pointermove', e => { px = e.clientX / innerWidth - .5; py = e.clientY / innerHeight - .5; }, { passive: true });
+    gsap.ticker.add(() => {
+      if (!gActive) return;
+      cur += (gP - cur) * .1; const f = cur * (N - 1); ring.rotation.y = -f * step;
+      for (let i = 0; i < N; i++) { let d = ((i - f) % N + N) % N; if (d > N / 2) d -= N; const a = Math.abs(d), front = Math.max(0, 1 - a);
+        mats[i].color.setScalar(.25 + .75 * Math.max(0, 1 - a * .5)); meshes[i].scale.setScalar(1 + .1 * front); }
+      const idx = Math.max(0, Math.min(N - 1, Math.round(f))); if (idx !== gIdx) { gIdx = idx; galInfo(); }
+      cam.lookAt(px * .8, -py * .5, 1); r.render(scene, cam);
+    });
+  })();
+
+  /* ---- Cinematic film: scroll-scrubbed zooms and cross-fades on real photographs ---- */
+  let cnN = 0;
+  function cnLabel(n) { $('cn-count').textContent = `0${n + 1} / 05`; $('cn-cap').textContent = S[L].cine[n]; $('cn-cap').style.opacity = n === 4 ? 0 : 1; }
+  function cineText() { const s = S[L]; $('cn-h').textContent = s.tag; $('cn-btn').textContent = s.enq; $('cn-btn').href = link(s.wag); cnLabel(cnN); }
+  const cnZoom = (px, py, s) => ({ scale: s, x: () => -s * (px - .5) * $('cn-st').clientWidth, y: () => -s * (py - .5) * $('cn-st').clientHeight, invalidateOnRefresh: true });
+  gsap.set('#cn-pb', { scale: 1.06 }); gsap.set('#cn-pa', { scale: 1.15, rotationY: 14, x: 30, transformPerspective: 900 }); gsap.set('#cn-pc', { scale: 1.1, rotationY: 12, transformPerspective: 900 });
+  const ctl = gsap.timeline({ defaults: { ease: 'power2.inOut' }, scrollTrigger: { trigger: '#cine', start: 'top top', end: 'bottom bottom', scrub: 1 } });
+  ctl.to('#cn-pb', { ...cnZoom(.22, .78, 2.6), duration: .7 }, .7).to('#cn-dof', { opacity: .9, duration: .7 }, .7)      // 2 bracelet macro
+     .to('#cn-pb', { ...cnZoom(.5, .44, 2.4), duration: .7 }, 1.7)                                                   // 3 crystal and bezel
+     .to('#cn-dof', { opacity: 0, duration: .5 }, 2.6).to('#cn-pb', { scale: 1.06, x: 0, y: 0, duration: .8 }, 2.6)   // 4 other angles
+     .to('#cn-la', { opacity: 1, duration: .6, ease: 'none' }, 2.8).to('#cn-pa', { scale: 1, rotationY: -12, x: -30, duration: 1.3, ease: 'none' }, 2.8)
+     .to('#cn-lc', { opacity: 1, duration: .6, ease: 'none' }, 3.9).to('#cn-pc', { scale: .94, rotationY: 0, duration: 1.2 }, 3.9)  // 5 reveal
+     .to('#cn-final', { opacity: 1, duration: .5 }, 4.7).to('#cn-btn', { opacity: 1, duration: .4 }, 4.9).to({}, { duration: .3 }, 5.2);
+  ScrollTrigger.create({ trigger: '#cine', start: 'top top', end: 'bottom bottom', onUpdate: s => {
+    const t = s.progress * ctl.duration(), n = t < 1.05 ? 0 : t < 2.05 ? 1 : t < 2.7 ? 2 : t < 4.3 ? 3 : 4;
+    if (n !== cnN) { cnN = n; cnLabel(n); } $('cn-prog').style.height = s.progress * 100 + '%'; } });
+
+  window.__ready = true; afterRender();
+</script>
+</body>
+</html>
